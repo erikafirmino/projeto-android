@@ -46,6 +46,7 @@ header > h1 {
     font-family:var(--font-destaque);
     font-size: 3em;
     color: white;
+    font-weight: normal;
     margin-bottom: 20px;     /*espaço entre e h1 e o paragrafo*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.300);
 }
@@ -92,6 +93,8 @@ main {
 main h1 {
     font-family: var(--font-android);
     color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 main h2 {
     font-family: var(--font-android);
@@ -119,8 +122,8 @@ main a:hover {
     color: var(--cor3);
     text-decoration: underline;
 }
-.externo::after{
-    content:;
+a.externo::after{
+    content:'\00A0\1F517';
 }
 main img {
     width: 100%;
@@ -133,6 +136,20 @@ main img.pequena {
 main strong {
     color: var(--cor4);
     font-weight: bold;
+}
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 aside {
     background-color: var(--cor1);
